@@ -1,0 +1,13 @@
+body { 
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+}
+
+#icons { 
+    display: flex;
+    display: inline;
+}
+
+#button { 
+    display: block;
+}
