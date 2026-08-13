@@ -3,39 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Login interativo</title>
 </head>
 <body>
-
-    <!-- JÁ FAZER O GIT NESSE PROJETO DESDE JÁ-->
-   <!--   criar um título (h1) "Welcome back!" -->
-    <!-- linha "to keep conected with us" --> 
-    <!-- linha "please login with your personal info" -->
-    <!-- botão "sig in" -->
-    
-    
-    <!-- criar um titulo (h1) "create Account" -->
-    <h1> Create Account </h1> 
-    
-    
-    <!-- ícone "instagram, google plus, linked in "  IN LINE -->
-    <div id="icons"><ion-icon name="logo-instagram"></ion-icon>
-    </div>
-    <div id="icons"><ion-icon name="logo-linkedin"></ion-icon></div>
-    <div id="icons"><ion-icon name="logo-google"></ion-icon>
-    </div>
-    
-    <!-- caixa coluna "para colocar as informações de nome, email e password" -->
-    
-    <!-- botão "sign up" --> 
-        <div id="button" > 
-            <button> SIGN UP</button>
-
+    <div class="container"> <!--container 1 -->
+        <div class="content first-content">
+         <h2 class="title">Welcome Back!</h2>
+         <p class="description">To keep connected with us</p>
+         <p class="description">please login with your personal info</p>
+         <button class="btn">SIGN IN</button>
+         
         </div>
 
-    
-<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
+        <div class="content second-content"> <!--container 2-->
+ 
+          <h2 class="title">Creat Account</h2>
+         <div class="social-media">
+            <ul>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">google +</a></li>
+                <li><a href="#">linkedin</a></li>
+                
+            </ul>
+
+        <p class="description">or use your email for registration:</p>
+        <form class="form">
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button class="btn 2">SIGN UP</button>
+        </form>
+        </div>
+
+        <div class="container container-2">  <!--container 3-->
+        <h2 class="title"> Hello, Friend! </h2>
+        <p class="description">Enter your personal details</p>
+        <p class="description">and start journey with us</p>
+        <button class="btn3">SIGN UP</button>
+       </div>
+            
+
+        <div class="container container-2">  <!--container 4-->
+         
+       <h2 classe="title">Sign In To Developer</h2>
+       <div class="social-media">
+        <ul>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">google +</a></li>
+            <li><a href="#">linkedin</a></li>
+        </ul>
+        <p class="description">or use your email account:</p>
+        <form class="form">
+            <input type="email"placeholder="email">
+            <input type="password"placeholder="password">
+            <a href="#">Forgot your password?</a>
+            <button class="btn">SIGN IN</button>
+        </form>
+       </div>
+
+       
+
+     
 </body>
-</html>  
+</html>
+
+        
