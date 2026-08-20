@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container { 
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+    
+    /* medida relativa */
+    align-items: center;
+    
+}
+.first-content { 
+    display: flex;
+
+}
+.second-content{
+    position: absolute;
+    display: none;
+}
+
+ul { 
+    display: flex;
+     /* aplicar o flex-direction:row; é redundante, mas irei apenas por active recall */
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
