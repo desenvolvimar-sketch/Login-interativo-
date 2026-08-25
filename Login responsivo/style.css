@@ -1,7 +1,13 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body { 
+ font-family: "Google Sans", sans-serif;
+ 
 }
 .container { 
     display: flex;
@@ -20,15 +26,44 @@
     height: 50%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
+.content::before { 
+    content: "";
+    position: absolute ;
+    background-color: #58af9b; 
+    width: 40%;
+    height: 100%;
+}
+
+.title { 
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;}
+
+.title-welcome { 
+    color: #ffff;
+}
+   
+ .description { 
+     font-size: 14px;
+     font-weight: 300;
+     color: #fff;
+     line-height: 30px;
+
+ }   
+
+ 
 .first-content { 
     display: flex;
 }
 
+
 .first-column { 
     text-align: center;
     flex: 1 0 auto;
+    z-index: 10;
 }
 .second-column {
     flex: 2 0 auto;
@@ -46,6 +81,7 @@
     flex-direction: row;
     list-style: none;
     gap: 10px;
+    align-items: center;
 
 }
 
@@ -55,4 +91,5 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 }
