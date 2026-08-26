@@ -30,31 +30,15 @@ body {
 }
 
 .content::before { 
+    border-radius: 15px;
     content: "";
     position: absolute ;
     background-color: #58af9b; 
-    width: 40%;
+    width: 35%;
     height: 100%;
+    
 }
 
-.title { 
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: capitalize;}
-
-.title-welcome { 
-    color: #ffff;
-}
-   
- .description { 
-     font-size: 14px;
-     font-weight: 300;
-     color: #fff;
-     line-height: 30px;
-
- }   
-
- 
 .first-content { 
     display: flex;
 }
@@ -74,6 +58,43 @@ body {
     position: absolute;
     display: none;
 }
+.title { 
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-welcome { 
+    color: #ffff;
+}
+   
+ .description { 
+     font-size: 14px;
+     font-weight: 300;
+     color: #fff;
+     line-height: 30px;
+
+ }   
+
+ .btn { 
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+ }
+.btn-primary { 
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-primary:hover { 
+background-color: #fff;
+color: #58af9b;
+}
+ 
 
 .list-social-media { 
     display: flex;
