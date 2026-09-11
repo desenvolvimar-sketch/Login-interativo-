@@ -57,30 +57,41 @@ body {
     align-items: center;
 }
 
+.link-social-media { 
+
+}
+
 .list-social-media { 
-        display: flex;
-        justify-content: center;
-         /* aplicar o flex-direction:row; é redundante, mas irei apenas por active recall */
-        flex-direction: row;
-        list-style: none;
-        gap: 10px;
-        align-items: center;
-        
+    display: flex;
+    /* aplicar o flex-direction:row; é redundante, mas irei apenas por active recall */
+    list-style: none;
     
 }
 
 
 .item-social-media { 
-border: 1px solid #bdc3c7;
-border-radius: 50%;
-width: 35px;
-height: 35px;
-line-height: 35px;
-text-align: center;
-
-}
-.item-social-media a { 
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 1rem;
     color: #95a5a6;
+    
+}
+
+.item-social-media:hover{
+    background-color: #58af9b;
+    color: white;
+    transition: background 0.6s;
+}
+/* .item-social-media a {     esse código foi apagado devido a mudança de HTML das li's
+ color: #95a5a6;
+} */
+
+.link-social-media:not(:first-child) {
+margin-left: 10px;
 }
 
 }
@@ -125,7 +136,7 @@ text-align: center;
     width:150px;
     align-self: center;
     transition: background 0.2s;
-   
+    margin-top: 1rem;
  }
  
 .btn-primary { 
@@ -158,14 +169,23 @@ color: #58af9b;
 }
  
 .form input { 
-height: 45px;
+ height: 45px;
  border: none;
  background-color: #ecf0f1;
- margin: 8px; 
-   
+ width: 100%;  
+  
 }
     
+.label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
 
+.icon-modify { 
+    padding: 0 8px;
+}
 
 .second-content {
     position: absolute;
