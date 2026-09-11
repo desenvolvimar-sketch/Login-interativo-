@@ -22,7 +22,7 @@ body {
 .content { 
     background-color: white;
     border-radius:15px;
-    width: 80%;
+    width: 960px;  /* ajustando na aula 3 min 16:40 */
     height: 50%;
     justify-content: space-between;
     align-items: center;
@@ -122,6 +122,9 @@ text-align: center;
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
+    width:150px;
+    align-self: center;
+    transition: background 0.2s;
    
  }
  
@@ -134,6 +137,16 @@ text-align: center;
 .btn-primary:hover { 
     background-color: #fff;
     color: #58af9b;
+}
+.btn-second{ 
+    background-color: #58af9b;
+    border: none;
+    
+}
+.btn-second:hover {
+background-color: white;
+border: 1px solid  #58af9b;
+color: #58af9b;
 }
 
 
