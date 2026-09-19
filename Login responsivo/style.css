@@ -30,17 +30,21 @@ body {
 }
 
 .content::before { 
-    border-radius: 15px;
     content: "";
     position: absolute ;
     background-color: #58af9b; 
     width: 35%;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    left: 65%;
+    
     
 }
 
 .first-content { 
     display: flex;
+    display: none;
 }
 
 
@@ -57,9 +61,9 @@ body {
     align-items: center;
 }
 
-.link-social-media { 
+/* .link-social-media { 
 
-}
+} */
 
 .list-social-media { 
     display: flex;
@@ -81,10 +85,11 @@ body {
     
 }
 
-.item-social-media:hover{
+.link-social-media:hover .item-social-media {
     background-color: #58af9b;
     color: white;
-    transition: background 0.6s;
+    transition: background 0.2s;
+    border-color: #58af9b;
 }
 /* .item-social-media a {     esse código foi apagado devido a mudança de HTML das li's
  color: #95a5a6;
@@ -137,6 +142,7 @@ margin-left: 10px;
     align-self: center;
     transition: background 0.2s;
     margin-top: 1rem;
+    
  }
  
 .btn-primary { 
@@ -189,5 +195,23 @@ color: #58af9b;
 
 .second-content {
     position: absolute;
-    display: none;
+    display: flex;
+    
+}
+.second-content .first-column { 
+    order: 2;
+}
+.second-content .second-column {
+    order: 1;
+}
+
+.password { 
+    text-align: center;
+    color: #95a5a6;
+    margin: 15px 0;
+    font-size: 14px;
+    
+}
+.password::first-letter { 
+    text-transform:capitalize ;
 }
