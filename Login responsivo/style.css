@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -29,76 +28,16 @@ body {
     position: relative;
 }
 
-.content::before { 
+.content::before  { 
     content: "";
     position: absolute ;
     background-color: #58af9b; 
-    width: 35%;
+    width: 40%;
     height: 100%;
+    left: 0;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    left: 65%;
     
-    
-}
-
-.first-content { 
-    display: flex;
-    display: none;
-}
-
-
-.first-column { 
-    text-align: center;
-    flex: 1 0 auto;
-    z-index: 10;
-    
-}
-.second-column {
-    flex: 2 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* .link-social-media { 
-
-} */
-
-.list-social-media { 
-    display: flex;
-    /* aplicar o flex-direction:row; é redundante, mas irei apenas por active recall */
-    list-style: none;
-    
-}
-
-
-.item-social-media { 
-    border: 1px solid #bdc3c7;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    margin-top: 1rem;
-    color: #95a5a6;
-    
-}
-
-.link-social-media:hover .item-social-media {
-    background-color: #58af9b;
-    color: white;
-    transition: background 0.2s;
-    border-color: #58af9b;
-}
-/* .item-social-media a {     esse código foi apagado devido a mudança de HTML das li's
- color: #95a5a6;
-} */
-
-.link-social-media:not(:first-child) {
-margin-left: 10px;
-}
-
 }
 .title { 
     font-size: 28px;
@@ -113,12 +52,10 @@ margin-left: 10px;
 .title-welcome { 
     color: #ffff;
 }
-
 .description { 
     font-size: 14px;
     font-weight: 300;
     line-height: 30px;
-    text-align: center;
 }
 
 .description-primary {
@@ -129,7 +66,6 @@ margin-left: 10px;
     color: #95a5a6;
     
 }
-
 .btn { 
     border-radius: 15px;
     text-transform: uppercase;
@@ -166,6 +102,72 @@ border: 1px solid  #58af9b;
 color: #58af9b;
 }
 
+.first-content { 
+    display: flex;
+    position: absolute;
+}
+.first-content .second-column {
+    z-index: 11;
+}
+
+
+.first-column { 
+    text-align: center;
+    width:40%;
+    z-index: 10;
+}
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .link-social-media { 
+
+} */
+ .social-media { 
+    margin: 1rem 0;
+}
+
+.link-social-media:not(:first-child) {
+margin-left: 10px;
+}
+ .link-social-media:hover .item-social-media {
+     background-color: #58af9b;
+     color: white;
+     transition: background 0.2s;
+     border-color: #58af9b;
+ }
+.list-social-media { 
+    display: flex;
+    /* aplicar o flex-direction:row; é redundante, mas irei apenas por active recall */
+    list-style: none;
+    
+}
+
+
+.item-social-media { 
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 1rem;
+    color: #95a5a6;
+    
+}
+
+/* .item-social-media a {     esse código foi apagado devido a mudança de HTML das li's
+ color: #95a5a6;
+} */
+
+
+}
+
+
+
 
 .form {
     display: flex;
@@ -190,19 +192,25 @@ color: #58af9b;
 }
 
 .icon-modify { 
-    padding: 0 8px;
+    padding: 0 5px;
 }
+
+/* second content */
 
 .second-content {
     position: absolute;
     display: flex;
-    
-}
+ }
+
 .second-content .first-column { 
     order: 2;
+    z-index: -1;
+    
 }
 .second-content .second-column {
     order: 1;
+    z-index: -1;
+    
 }
 
 .password { 
@@ -215,3 +223,38 @@ color: #58af9b;
 .password::first-letter { 
     text-transform:capitalize ;
 }
+
+.sign-in-js .first-content .first-column,  
+.sign-in-js .first-content .second-column{ 
+z-index: -1;
+}
+
+.sign-in-js .second-content .first-column,
+.sign-in-js .second-content .second-column { 
+z-index: 12;
+}
+.sign-in-js .content::before{
+left: 60%;
+border-top-right-radius:15px;
+border-bottom-right-radius:15px;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column { 
+    z-index: -1;
+}
+
+.sign-up-js .first-content .first-column,
+.sign-up-js .first-content .second-column { 
+   z-index: 12;
+}
+.sign-up-js .content::before{
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+}
+
+/* ANIMAÇÕES CSS */
+
