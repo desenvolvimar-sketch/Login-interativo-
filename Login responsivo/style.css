@@ -178,6 +178,7 @@ margin-left: 10px;
  
 .form input { 
  height: 45px;
+ width: 100%;
  border: none;
  background-color: #ecf0f1;
  width: 100%;  
@@ -209,9 +210,10 @@ margin-left: 10px;
 }
 .second-content .second-column {
     order: 1;
-    z-index: -1;
-    
+    z-index: -1;  
 }
+
+
 
 .password { 
     text-align: center;
@@ -227,11 +229,16 @@ margin-left: 10px;
 .sign-in-js .first-content .first-column,  
 .sign-in-js .first-content .second-column{ 
 z-index: -1;
+
+
 }
 
 .sign-in-js .second-content .first-column,
 .sign-in-js .second-content .second-column { 
 z-index: 12;
+
+
+
 }
 .sign-in-js .content::before{
 left: 60%;
@@ -239,22 +246,147 @@ border-top-right-radius:15px;
 border-bottom-right-radius:15px;
 border-top-left-radius: 0;
 border-bottom-left-radius: 0;
+animation: slide-in .8s; 
 }
 
 
 .sign-up-js .second-content .first-column,
 .sign-up-js .second-content .second-column { 
     z-index: -1;
+
+}
+
+.sign-up-js .second-content .second-column {
+    position: relative;
+    
 }
 
 .sign-up-js .first-content .first-column,
 .sign-up-js .first-content .second-column { 
    z-index: 12;
+   
 }
 .sign-up-js .content::before{
 border-top-left-radius: 15px;
 border-bottom-left-radius: 15px;
+animation: slide-up .8s;
+
 }
 
+.sign-in-js .first-content .second-column {
+    z-index: -1;
+    position: relative;
+    animation:deslocamentoEsq-dir 1s;
+}
+
+.sign-up-js .second-content .second-column {
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir-esq 1s;
+}
 /* ANIMAÇÕES CSS */
+
+@keyframes slide-in { 
+
+    from {
+      left:0;
+      width: 40%;
+      z-index: 13;
+    }
+
+    50% { 
+        left: 30%;
+       width: 60%; 
+       z-index: 13;
+    }
+
+    
+
+    to { 
+       left:60%;
+       width:40%;
+       z-index: 13; 
+    }
+}
+
+@keyframes slide-up { 
+
+    from {
+      left:60%;
+      width: 40%;
+      z-index: 13;
+      
+    }
+
+    50% { 
+       left: 30%;
+       width: 60%;
+       z-index: 13;
+    }
+
+    to { 
+       
+       left:0;
+       width: 40%;
+       z-index: 13; 
+    }
+}
+ /*DESLOCAMENTO CONTEÚDOS ATRÁS DO ::BEFORE */
+
+
+ 
+  @keyframes deslocamentoEsq-dir { 
+from{
+    left: 0;
+    opacity:1;
+    z-index: 12;
+}
+   25%{
+    left: -80px;
+    opacity: .5;
+    
+   }
+    50%{
+    left: -20px;
+    opacity: .2;
+    }
+
+   
+to {
+    left: -20px;
+    opacity:0;
+    z-index: -1;
+}
+
+}
+
+
+@keyframes deslocamentoDir-esq { 
+  
+    from{
+    left: 0;
+    z-index: 12;
+}
+   25%{
+    left: 80px;
+    opacity: .5;
+    
+   }
+
+   50%{
+    left: 100px;
+    opacity: .2;
+   }
+   
+to {
+    left: 110px;
+    opacity:0;
+    z-index: -1;
+}
+
+   
+}
+ 
+
+
 
